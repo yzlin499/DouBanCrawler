@@ -37,10 +37,10 @@ public final class DouBanApiUrl {
 
     /**
      * 获得短评
-     * @param movieID
-     * @param start
-     * @param count
-     * @return
+     * @param movieID ID
+     * @param start 从哪一条开始
+     * @param count 获取多少条
+     * @return 拼接结果
      */
     public static String comment(int movieID,int start,int count){
         return "http://api.douban.com/v2/movie/subject/"+movieID+"/comments?" +

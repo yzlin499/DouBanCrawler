@@ -7,6 +7,10 @@ import top.yzlin.doubancrawler.info.SimpleMovieInfo;
 import java.util.List;
 import java.util.function.Function;
 
+/**
+ * 搜索列表接口
+ * @author yzlin
+ */
 public interface SearchInterface {
     /**
      * 搜索

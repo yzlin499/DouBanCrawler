@@ -3,7 +3,8 @@ package top.yzlin.doubancrawler.crawler;
 import android.os.Handler;
 
 /**
- * Created by yzlin on 2018/5/16.
+ * 评论获取接口
+ * @author yzlin
  */
 
 public interface CommentListInterface {
@@ -16,19 +17,19 @@ public interface CommentListInterface {
 
     /**
      * 搜索下一页
-     * @param handler
+     * @param handler 事件
      */
     void nextPage(Handler handler);
 
     /**
-     * 设置一次搜索多少
-     * @param count
+     * 设置一次获取多少评论
+     * @param count 数量
      */
     void setCount(int count);
 
     /**
-     * 获取搜索多少
-     * @return
+     * 获取多少
+     * @return 数量
      */
     int getCount();
 }

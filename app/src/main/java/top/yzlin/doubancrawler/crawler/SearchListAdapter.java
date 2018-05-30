@@ -10,6 +10,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 
+/**
+ * 搜索结果适配
+ * @author yzlin
+ */
 public class SearchListAdapter implements SearchInterface{
     private SearchListCreate searchListCreate=SearchListCreate.getInstance();
     private SearchList searchList;

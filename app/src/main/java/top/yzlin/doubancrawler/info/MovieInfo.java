@@ -2,6 +2,10 @@ package top.yzlin.doubancrawler.info;
 
 import java.util.Arrays;
 
+/**
+ * 电影实体类
+ * @author yzlin
+ */
 public class MovieInfo extends SimpleMovieInfo {
     private String[] scriptWriters;
     private String[] releaseTimes;
@@ -10,6 +14,10 @@ public class MovieInfo extends SimpleMovieInfo {
 
     public MovieInfo(){}
 
+    /**
+     * 复制
+     * @param simpleMovieInfo
+     */
     public MovieInfo(SimpleMovieInfo simpleMovieInfo){
         this.movieID=simpleMovieInfo.movieID;
         this.movieTitle=simpleMovieInfo.movieTitle;

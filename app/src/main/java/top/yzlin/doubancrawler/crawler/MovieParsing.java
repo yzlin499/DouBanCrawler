@@ -11,6 +11,10 @@ import top.yzlin.doubancrawler.tools.NetTools;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 电影信息解析
+ * @author yzlin
+ */
 public class MovieParsing {
     private static class Instance{
         private static MovieParsing newInstance=new MovieParsing();
@@ -57,7 +61,7 @@ public class MovieParsing {
 
     /**
      * 解析函数，将一部电影封装成bean
-     * @param movieID
+     * @param movieID 电影ID
      * @return
      */
     private MovieInfo parsingFunction(int movieID){

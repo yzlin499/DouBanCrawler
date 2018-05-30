@@ -17,9 +17,8 @@ import top.yzlin.doubancrawler.crawler.SearchListAdapter;
 import top.yzlin.doubancrawler.info.SimpleMovieInfo;
 
 /**
- * @author 丁溢
+ * @author ASUS
  */
-
 public class SearchResultsActivity extends Activity {
     private ListView lv;
     private ListAdapter listAdapter;

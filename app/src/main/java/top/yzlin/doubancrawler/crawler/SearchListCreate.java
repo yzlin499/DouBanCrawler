@@ -12,6 +12,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * 用来创建与控制搜索结果
+ * @author yzlin
+ */
 public class SearchListCreate {
     private static class Instance{
         private static SearchListCreate newInstance=new SearchListCreate();
@@ -47,6 +51,11 @@ public class SearchListCreate {
     }
 
 
+    /**
+     * 获取下一页
+     * @param page
+     * @return
+     */
     private List<SimpleMovieInfo> newPage(Integer page){
         try {
             JSONObject data = new JSONObject(NetTools.sendGet(DouBanApiUrl.search(keyWord, page * count, count)));

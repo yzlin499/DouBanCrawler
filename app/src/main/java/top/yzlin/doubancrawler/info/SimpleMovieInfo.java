@@ -2,6 +2,10 @@ package top.yzlin.doubancrawler.info;
 
 import java.util.Arrays;
 
+/**
+ * 电影的简单实体类
+ * @author yzlin
+ */
 public class SimpleMovieInfo {
     protected int movieID;
     protected String movieTitle;

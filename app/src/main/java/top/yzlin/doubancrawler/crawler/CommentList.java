@@ -14,11 +14,15 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * 评论列表类
+ * @author yzlin
+ */
 public class CommentList {
     private final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private int page=0;
     private List<Comment> commentList =new ArrayList<>();
-    private boolean noFull=true;
+    private boolean noFull=true;//判断是否评论获取完了
     private int count=20;
     private int movieID;
 
@@ -26,23 +30,34 @@ public class CommentList {
         this(simpleMovieInfo.getMovieID());
     }
 
+    /**
+     * 按照电影ID来获取评论
+     * @param movieID 电影ID
+     */
     public CommentList(int movieID){
         this.movieID=movieID;
         get(0);
     }
 
+    /**
+     * 设置一次更新多少数据
+     */
     public void setCount(int count){
         this.count=count;
     }
 
+    /**
+     * 一次更新多少数据
+     * @return 更新的量
+     */
     public int getCount(){
         return count;
     }
 
     /**
      * 获得数据
-     * @param index
-     * @return
+     * @param index 索引
+     * @return 数据
      */
     public Comment get(int index){
         if (commentList ==null){
@@ -67,7 +82,7 @@ public class CommentList {
      * 获得一个区间
      * @param start 包含
      * @param end 不包含
-     * @return
+     * @return 那个区间的数据
      */
     public Comment[] get(int start, int end){
         if (commentList ==null){
@@ -96,15 +111,28 @@ public class CommentList {
         }
     }
 
+    /**
+     * 清除当前列表，并且使其作废
+     * 调用这个方法之后不要再次使用该实例，否则最少报一个空指针
+     */
     public void clear(){
         commentList.clear();
         commentList =null;
     }
 
+    /**
+     * 当前拥有的评论数量
+     * @return 评论数量
+     */
     public int size(){
         return commentList !=null? commentList.size():-1;
     }
 
+    /**
+     * 更新一页数据，将数据加到容器之中
+     * @param page 页数
+     * @return 返回查询到的数据列表
+     */
     private List<Comment> newPage(Integer page){
         try {
             JSONObject data = new JSONObject(NetTools.sendGet(DouBanApiUrl.comment(movieID,page * count, count)));

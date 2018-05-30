@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -14,10 +13,9 @@ import java.util.List;
 import top.yzlin.doubancrawler.info.Comment;
 
 /**
- * Created by Administrator on 2018/5/25.
+ * 评论界面的列表的适配器
+ * @author huke
  */
-
-
 public class RemarkAdapter extends BaseAdapter{
     private List<Comment> remarkList;
     private Context context;

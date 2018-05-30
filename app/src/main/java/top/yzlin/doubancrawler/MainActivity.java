@@ -11,7 +11,7 @@ import android.widget.EditText;
 import top.yzlin.doubancrawler.crawler.SearchList;
 
 /**
- * @author 严泰清
+ * @author YanTaiQin
  */
 public class MainActivity extends Activity {
     private EditText et_Search;

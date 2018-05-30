@@ -2,6 +2,10 @@ package top.yzlin.doubancrawler.info;
 
 import java.util.Date;
 
+/**
+ * 评论实体类
+ * @author yzlin
+ */
 public class Comment {
     private int rating;
     private String name;

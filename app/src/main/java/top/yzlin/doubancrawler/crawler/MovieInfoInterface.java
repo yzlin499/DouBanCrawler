@@ -7,6 +7,10 @@ import top.yzlin.doubancrawler.info.SimpleMovieInfo;
 
 import java.util.function.Function;
 
+/**
+ * 获取图片
+ * @author yzlin
+ */
 public interface MovieInfoInterface {
     /**
      * 获得电影完整信息
@@ -28,7 +32,7 @@ public interface MovieInfoInterface {
     void updateMovieInfo(int movieID,Handler handler);
 
     /**
-     * 清除整个缓存池
+     * 清除整个缓存
      */
     void clear();
 }

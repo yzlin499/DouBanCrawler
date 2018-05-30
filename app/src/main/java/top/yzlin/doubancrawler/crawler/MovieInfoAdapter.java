@@ -3,11 +3,12 @@ package top.yzlin.doubancrawler.crawler;
 import android.os.Handler;
 import android.os.Message;
 
-import top.yzlin.doubancrawler.info.MovieInfo;
 import top.yzlin.doubancrawler.info.SimpleMovieInfo;
 
-import java.util.function.Function;
-
+/**
+ * 获取图片信息的适配
+ * @author yzlin
+ */
 public class MovieInfoAdapter implements MovieInfoInterface {
     private MovieParsing movieParsing=MovieParsing.getInstance();
 

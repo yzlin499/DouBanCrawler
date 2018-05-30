@@ -8,17 +8,18 @@ import java.util.Arrays;
 
 import top.yzlin.doubancrawler.info.Comment;
 
-/**
- * Created by yzlin on 2018/5/16.
- */
 
+/**
+ * 用于控制类与接口对接
+ * @author yzlin
+ */
 public class CommentAdapter implements CommentListInterface {
     private int movieID=-2147483648;
     private CommentList commentList;
 
     private int count=20;
     private ArrayList<Comment> commentResultList;
-    Message message=new Message();
+    private Message message=new Message();
 
     @Override
     public void getCommentList(int movieID, Handler handler) {

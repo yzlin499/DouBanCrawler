@@ -15,7 +15,10 @@ import top.yzlin.doubancrawler.crawler.CommentAdapter;
 import top.yzlin.doubancrawler.crawler.CommentListInterface;
 import top.yzlin.doubancrawler.info.Comment;
 
-
+/**
+ * 评论界面
+ * @author huke
+ */
 public class RemarkActivity extends AppCompatActivity {
     CommentListInterface commentListInterface=new CommentAdapter();
     RemarkAdapter remarkadapter;

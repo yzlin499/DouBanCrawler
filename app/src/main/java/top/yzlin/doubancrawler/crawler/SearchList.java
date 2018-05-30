@@ -9,6 +9,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.function.Function;
 
+/**
+ * 搜索结果
+ * @author yzlin
+ */
 public class SearchList {
     private int page=0;
     private Function<Integer,Collection<SimpleMovieInfo>> getNewPage;

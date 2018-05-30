@@ -20,9 +20,9 @@ import top.yzlin.doubancrawler.crawler.ImgDownLandInterface;
 import top.yzlin.doubancrawler.info.SimpleMovieInfo;
 
 /**
- * Created by ASUS on 2018/5/25.
+ * 搜索列表的适配器
+ * @author ASUS
  */
-
 public class ListAdapter extends BaseAdapter {
     private ImgDownLandInterface imgDownLandAdapter=new ImgDownLandAdapter();
     ArrayList<SimpleMovieInfo> arrayList;

@@ -5,12 +5,11 @@ import android.os.Message;
 
 
 /**
- * Created by yzlin on 2018/5/30.
+ * 图片下载适配安卓
+ * @author yzlin
  */
-
 public class ImgDownLandAdapter implements ImgDownLandInterface {
-    ImgDownLand imgDownLand=ImgDownLand.getInstance();
-
+    private ImgDownLand imgDownLand=ImgDownLand.getInstance();
     @Override
     public void getImg(String url, Handler handler){
         new Thread(()->{

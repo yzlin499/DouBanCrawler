@@ -36,7 +36,10 @@ import top.yzlin.doubancrawler.crawler.MovieInfoAdapter;
 import top.yzlin.doubancrawler.crawler.MovieInfoInterface;
 import top.yzlin.doubancrawler.info.MovieInfo;
 
-
+/**
+ * 电影信息显示界面
+ * @author yanTaiQin;ASUS
+ */
 public class Movie extends Activity {
     TextView title;
     TextView year;
